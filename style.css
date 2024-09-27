@@ -25,16 +25,17 @@ header {
 }
 
 .enlace a {
-    width: 100%;
-    margin: auto;
+    margin: 0 20px;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--color-terciario);
     font-size: 20px;
 }
-.enlace a{
-margin: 0 20px;
+
+.enlace {
+    
 }
+
 main {
     text-align: center; /* Asegúrate de que el texto esté centrado */
 }
