@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Fredoka:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #31363F;
+    --color-terciario: #76ABAE;
+    --color-cuartecio: #31363F;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+}
+
+header {
+    background-color: var(--color-secundario);
+    padding: 1%; /* Espacio interno */
+}
+
+.enlace a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-terciario);
+    font-size: 20px;
+}
+
+.enlace {
+    padding: 0 0 0 15%;
+}
+
+main {
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+}
+
+.resalatado {
+    color: #76ABAE;
+}
+
+.Presentacion_contenido_texto {
+    padding: 3%;
+    color: var(--color-terciario);
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    margin: 0 auto; /* Centrar el texto */
+}
+
+.Presentacion_contenido {
+    padding: 0 10%;
+    display: flex;
+    justify-content: center; /* Cambia de end a center */
+    align-items: center;
+}
+
+.Video_Imagen {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 5%;
+    align-items: center; /* Centrar elementos */
+}
+
+.img {
+    margin: 0 20px;
+}
+
+footer {
+    background-color: var(--color-secundario);
+    padding: 5px; /* Espacio interno */
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    color: var(--color-terciario);
+    font-size: 20px;
+    text-align: center;
+}
+
+.enlace_final {
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 758px) {
+    .enlace {
+        padding: 0 5%; /* Menos espacio lateral */
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar los enlaces */
+    }
+
+    .enlace a {
+        margin: 10px 0; /* Espacio vertical entre enlaces */
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+    }
+
+    main {
+        text-align: center; /* Centrar texto en el main */
+        padding: 0 10%; /* Añadir algo de padding */
+    }
+
+    .Presentacion_contenido {
+        padding: 0% ;
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar contenido */
+        text-align: center; /* Asegurarse de que el texto esté centrado */
+    }
+
+    .Presentacion_contenido_texto {
+        font-size: 24px; /* Reducir tamaño de fuente */
+        margin: 0 auto; /* Centrar el texto */
+        line-height: 1.4; /* Mejorar la legibilidad */
+    }
+
+    .Video_Imagen {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar elementos */
+        padding: 10px; /* Añadir padding */
+    }
+
+    .img {
+        width: 100%; /* Ajustar a 100% en móviles */
+        max-width: 150px; /* Tamaño máximo para imágenes */
+        margin: 10px 0; /* Espacio vertical entre imágenes */
+    }
+}
+
+@media (max-width: 480px) {
+    .Presentacion_contenido_texto {
+        font-size: 20px; /* Aún más pequeño para móviles muy pequeños */
+        line-height: 1.3; /* Ajustar altura de línea para mejor legibilidad */
+    }
+
+    footer {
+        font-size: 18px; /* Reducir tamaño de fuente del footer */
+        padding: 10px 0; /* Añadir padding vertical */
+    }
+
+    .enlace_final {
+        font-size: 16px; /* Tamaño de fuente más pequeño para el enlace final */
+        margin: 5px 0; /* Espacio vertical para el enlace final */
+    }
+}
+
+/* Consultas de medios para tabletas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .Presentacion_contenido_texto {
+        font-size: 22px; /* Tamaño de fuente ajustado para tabletas */
+    }
+
+    .Video_Imagen {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar elementos */
+    }
+}
