@@ -18,12 +18,15 @@ body {
 }
 
 header {
+    margin: 0%;
+
     background-color: var(--color-secundario);
     padding: 1%; /* Espacio interno */
 }
 
 .enlace a {
-    margin: 0 20px;
+    width: 100%;
+    margin: auto;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--color-terciario);
@@ -31,7 +34,7 @@ header {
 }
 
 .enlace {
-    padding: 0 0 0 15%;
+    
 }
 
 main {
@@ -60,7 +63,7 @@ main {
 .Video_Imagen {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 5%;
+    padding: 0 30%;
     align-items: center; /* Centrar elementos */
 }
 
@@ -91,10 +94,15 @@ footer {
         align-items: center; /* Centrar los enlaces */
     }
 
-    .enlace a {
-        margin: 10px 0; /* Espacio vertical entre enlaces */
-        font-size: 18px; /* Tamaño de fuente más pequeño */
-    }
+    
+.enlace a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-terciario);
+    font-size: 20px;
+}
+
 
     main {
         text-align: center; /* Centrar texto en el main */
@@ -119,13 +127,6 @@ footer {
         align-items: center; /* Centrar elementos */
         padding: 10px; /* Añadir padding */
     }
-
-    .img {
-        width: 100%; /* Ajustar a 100% en móviles */
-        max-width: 150px; /* Tamaño máximo para imágenes */
-        margin: 10px 0; /* Espacio vertical entre imágenes */
-    }
-}
 
 @media (max-width: 480px) {
     .Presentacion_contenido_texto {
@@ -154,4 +155,5 @@ footer {
         flex-direction: column; /* Cambiar a columna */
         align-items: center; /* Centrar elementos */
     }
+}
 }
