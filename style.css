@@ -32,11 +32,9 @@ header {
     color: var(--color-terciario);
     font-size: 20px;
 }
-
-.enlace {
-    
+.enlace a{
+margin: 0 20px;
 }
-
 main {
     text-align: center; /* Asegúrate de que el texto esté centrado */
 }
